@@ -118,7 +118,7 @@ import {
     {
       title: "Primary Education",
       company_name: "Modern School, Koradi Road, Nagpur",
-      icon: school,
+      icon: starbucks,
       iconBg: "#383E56",
       date: "2008 - 2018",
       points: [
