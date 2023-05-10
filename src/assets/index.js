@@ -25,6 +25,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import school from "./company/school.png";
+import secondary from "./company/secondary.png";
+import graduation from "./company/graduation.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,6 +59,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  school,
+  secondary,
+  graduation,
   carrent,
   jobit,
   tripguide,

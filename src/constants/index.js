@@ -19,6 +19,9 @@ import {
     starbucks,
     tesla,
     shopify,
+    school,
+    secondary,
+    graduation,
     carrent,
     jobit,
     tripguide,
@@ -118,7 +121,7 @@ import {
     {
       title: "Primary Education",
       company_name: "Modern School, Koradi Road, Nagpur",
-      icon: starbucks,
+      icon: school,
       iconBg: "#383E56",
       date: "2008 - 2018",
       points: [
@@ -131,7 +134,7 @@ import {
     {
       title: "Secondary Education",
       company_name: "Dinanath High School and Junior College, Dhantoli, Nagpur",
-      icon: tesla,
+      icon: secondary,
       iconBg: "#E6DEDD",
       date: "2018 - 2020",
       points: [
@@ -144,7 +147,7 @@ import {
     {
       title: "CSE Undergraduate",
       company_name: "Ramdeobaba College of Engineering and Management, Nagpur",
-      icon: shopify,
+      icon: graduation,
       iconBg: "#383E56",
       date: "2020 - Present",
       points: [
