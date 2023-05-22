@@ -19,13 +19,16 @@ import {
     starbucks,
     tesla,
     shopify,
-    school,
-    secondary,
-    graduation,
     carrent,
     jobit,
     tripguide,
     threejs,
+    primaryGIF,
+    secondary,
+    graduation,
+    linkedin,
+    github_hero,
+    instagram,
   } from "../assets";
   
   export const navLinks = [
@@ -43,6 +46,24 @@ import {
     },
   ];
   
+  const social = [
+    {
+      title: "linkedin",
+      icon: linkedin,
+      social_link: "https://github.com/",
+    },
+    {
+      title: "instagram",
+      icon: instagram,
+      social_link: "https://github.com/",
+    },
+    {
+      title: "github",
+      icon: github_hero,
+      social_link: "https://github.com/",
+    },
+  ];
+
   const services = [
     {
       title: "Web Developer",
@@ -75,18 +96,18 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -111,17 +132,17 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
       title: "Primary Education",
       company_name: "Modern School, Koradi Road, Nagpur",
-      icon: school,
+      icon: primaryGIF,
       iconBg: "#383E56",
       date: "2008 - 2018",
       points: [
@@ -265,4 +286,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { social, services, technologies, experiences, testimonials, projects };

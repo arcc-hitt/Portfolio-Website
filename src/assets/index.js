@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import logo from "./logo/logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -25,13 +25,19 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import school from "./company/school.png";
-import secondary from "./company/secondary.png";
-import graduation from "./company/graduation.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import profile from "./profile_pic.jpg";
+import primaryGIF from "./primary.gif";
+import secondary from "./sec_science.gif";
+import graduation from "./graduation.gif";
+
+import linkedin from "./social/linkedin.png"
+import instagram from "./social/instagram.png"
+import github_hero from "./social/github.png"
 
 export {
   logo,
@@ -59,10 +65,14 @@ export {
   shopify,
   starbucks,
   tesla,
-  school,
-  secondary,
-  graduation,
   carrent,
   jobit,
   tripguide,
+  profile,
+  primaryGIF,
+  secondary,
+  graduation,
+  linkedin,
+  instagram,
+  github_hero,
 };

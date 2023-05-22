@@ -39,7 +39,13 @@ const About = () => {
       </motion.div>
 
       <motion.p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]" variants={fadeIn("", "", 0.1, 1)}>
-        abcd
+        I'm a tech enthusiast who is hardworking and is always ready to take on challenges.
+        Is dependable and passionate about work. Is always ready to learn new technologies.
+        {/* I'm a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
+        Three.js. I'm a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life! */}
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

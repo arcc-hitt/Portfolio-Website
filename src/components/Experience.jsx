@@ -19,7 +19,7 @@ const ExperienceCard = ({experience}) => {
         <div className='flex justify-center w-full h-full items-center'>
           <img
           src={experience.icon} alt={experience.company_name}
-          className='w-[60%] h-[60%] object-contain'
+          className='w-[70%] h-[70%] object-contain rounded-full'
           />
         </div>
       }
@@ -54,7 +54,6 @@ const Experience = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Journey so far..</p>
         <h2 className={styles.sectionHeadText}>Qualifications</h2>
-
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
