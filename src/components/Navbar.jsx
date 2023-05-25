@@ -1,8 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants/index";
 import { logo, menu, close } from "../assets";
+import { socials } from "../constants";
+import { fadeIn } from "../utils/motion";
+import { motion } from "framer-motion";
+
+const Social = ({
+  index,
+  icon,
+  title,
+  social_link,
+}) => {
+  return (
+    <>
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5, 0.75)}
+        initial="hidden"
+        animate="show"
+        className=' w-fit green-pink-gradient p-[1px] rounded-[10px] shadow-card'
+      >
+        <div className='bg-tertiary p-1 rounded-[10px] w-10 h-10 relative group overflow-hidden cursor-pointer'>
+          <div className="absolute top-0 -inset-full w-10 h-10 z-5 block transform -skew-x-13
+          bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
+            <div className='flex card-img_hover'>
+              <div
+                onClick={() => window.open(social_link, "_blank")}
+                className='flex justify-center items-center'
+              >
+                <img
+                  src={icon}
+                  alt={title}
+                  className='w-full h-full object-contain rounded-[10px]'
+                />
+              </div>
+            </div>
+          </div>
+      </motion.div>
+    </>
+  );
+};
 
 const Navbar = () => {
   
@@ -40,6 +78,12 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+        <div className='hidden sm:flex flex-wrap gap-6'>
+          {socials.map((social, index) => (
+            <Social key={`social-${index}`} index={index} {...social}/>
+          ))}
+        </div>
         
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -65,7 +109,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
     </nav>
   )
 }

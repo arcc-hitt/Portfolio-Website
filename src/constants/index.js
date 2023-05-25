@@ -46,21 +46,21 @@ import {
     },
   ];
   
-  const social = [
+  const socials = [
     {
       title: "linkedin",
       icon: linkedin,
-      social_link: "https://github.com/",
+      social_link: "https://www.linkedin.com/in/archit-mahule-10893124a/",
     },
     {
       title: "instagram",
       icon: instagram,
-      social_link: "https://github.com/",
+      social_link: "https://instagram.com/arcc.hitt?igshid=ZDc4ODBmNjlmNQ==",
     },
     {
       title: "github",
       icon: github_hero,
-      social_link: "https://github.com/",
+      social_link: "https://github.com/arcc-hitt",
     },
   ];
 
@@ -286,4 +286,4 @@ import {
     },
   ];
   
-  export { social, services, technologies, experiences, testimonials, projects };
+  export { socials, services, technologies, experiences, testimonials, projects };

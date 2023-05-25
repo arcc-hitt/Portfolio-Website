@@ -21,6 +21,14 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+        animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
     },
   },
   plugins: [],
