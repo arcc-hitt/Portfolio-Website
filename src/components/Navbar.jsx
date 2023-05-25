@@ -20,13 +20,13 @@ const Social = ({
         initial="hidden"
         animate="show"
         className=' w-fit green-pink-gradient p-[1px] rounded-[10px] shadow-card'
+        onClick={() => window.open(social_link, "_blank")}
       >
         <div className='bg-tertiary p-1 rounded-[10px] w-10 h-10 relative group overflow-hidden cursor-pointer'>
           <div className="absolute top-0 -inset-full w-10 h-10 z-5 block transform -skew-x-13
           bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
             <div className='flex card-img_hover'>
               <div
-                onClick={() => window.open(social_link, "_blank")}
                 className='flex justify-center items-center'
               >
                 <img
