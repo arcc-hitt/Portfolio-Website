@@ -27,8 +27,11 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import showtracker from "./ShowTracker-Image-Layout.png";
 import tripguide from "./tripguide.png";
+import VIsemproject from "./VIsemproject.png";
+import socialapp from "./social-app.png";
+import todo from "./todo.png";
 
 import profile from "./profile_pic.jpg";
 import primaryGIF from "./primary.gif";
@@ -66,7 +69,10 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
+  socialapp,
+  showtracker,
+  VIsemproject,
+  todo,
   tripguide,
   profile,
   primaryGIF,

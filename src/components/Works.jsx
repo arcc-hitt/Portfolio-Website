@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -6,6 +6,9 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ReactPaginate from "react-paginate";
 
 const ProjectCard = ({
   index,
@@ -15,8 +18,41 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const h3Ref = useRef(null);
+
+  const adjustFontSize = () => {
+    const h3Element = h3Ref.current;
+    if (!h3Element) return;
+
+    const lineHeight = parseInt(window.getComputedStyle(h3Element).lineHeight, 10);
+    const clientHeight = h3Element.clientHeight;
+    const fontSize = parseInt(window.getComputedStyle(h3Element).fontSize, 10);
+
+    const lines = clientHeight / lineHeight;
+
+    const minFontSize = 14; // Define a minimum font size
+    const maxReductionFactor = 0.75; // Maximum factor for reducing font size
+
+    if (lines > 1) {
+      const newFontSize = Math.max(
+        fontSize * (1 - (lines - 1) * maxReductionFactor),
+        minFontSize
+      );
+      h3Element.style.fontSize = `${newFontSize}px`;
+    }
+  };
+
+  useEffect(() => {
+    adjustFontSize();
+    window.addEventListener("resize", adjustFontSize);
+
+    return () => {
+      window.removeEventListener("resize", adjustFontSize);
+    };
+  }, []);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>    
       <Tilt
         options={{
           max: 45,
@@ -47,7 +83,7 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-white font-bold text-[24px] multi-line-text' ref={h3Ref}>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -66,7 +102,19 @@ const ProjectCard = ({
   );
 };
 
+const ProjectsPerPage = 3;
+
+const chunkArray = (array, chunkSize) => {
+  const chunkedArray = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    chunkedArray.push(array.slice(i, i + chunkSize));
+  }
+  return chunkedArray;
+};
+
 const Works = () => {
+  const chunkedProjects = chunkArray(projects, ProjectsPerPage);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -86,11 +134,24 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      
+      <div className='mt-20'>
+        <Carousel
+            showThumbs={false}
+            infiniteLoop={true}
+            autoPlay={true}
+            interval={5000}
+          >
+            {chunkedProjects.map((chunk, index) => (
+              <div key={`slide-${index}`} className="flex justify-center items-center">
+                {chunk.map((project, projectIndex) => (
+                  <div key={`project-${projectIndex}`} className="mx-4 text-left">
+                    <ProjectCard {...project} />
+                  </div>
+                ))}
+              </div>
+            ))}
+        </Carousel>
       </div>
     </>
   );

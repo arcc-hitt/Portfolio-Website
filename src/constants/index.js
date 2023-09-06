@@ -20,7 +20,10 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
+    socialapp,
+    showtracker,
+    VIsemproject,
+    todo,
     tripguide,
     threejs,
     primaryGIF,
@@ -140,11 +143,11 @@ import {
   
   const experiences = [
     {
-      title: "Primary Education",
-      company_name: "Modern School, Koradi Road, Nagpur",
-      icon: primaryGIF,
+      title: "CSE Undergraduate",
+      company_name: "Shri Ramdeobaba College of Engineering and Management, Nagpur",
+      icon: graduation,
       iconBg: "#383E56",
-      date: "2008 - 2018",
+      date: "2020 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -152,6 +155,7 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    
     {
       title: "Secondary Education",
       company_name: "Dinanath High School and Junior College, Dhantoli, Nagpur",
@@ -166,18 +170,18 @@ import {
       ],
     },
     {
-      title: "CSE Undergraduate",
-      company_name: "Ramdeobaba College of Engineering and Management, Nagpur",
-      icon: graduation,
+      title: "Primary Education",
+      company_name: "Modern School, Koradi Road, Nagpur",
+      icon: primaryGIF,
       iconBg: "#383E56",
-      date: "2020 - Present",
+      date: "2008 - 2018",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
+    },    
     // {
     //   title: "Full stack Developer",
     //   company_name: "Meta",
@@ -222,33 +226,41 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Social Media App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a cutting-edge Social Media App, showcasing functionalities like like, comment, and follow, while ensuring responsive design for optimal cross-device user experience.",
       tags: [
         {
-          name: "react",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
+        {
+          name: "restapi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "scss",
+          color: "green-text-gradient",
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: socialapp,
+      source_code_link: "https://github.com/arcc-hitt/Social-Media-App",
     },
     {
-      name: "Job IT",
+      name: "Show Tracker",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "An Android app simplifying user tracking of web series/movies. Integrated search functionality & statistical features such as favorites, watch later, & watch history.",
       tags: [
         {
-          name: "react",
+          name: "java",
           color: "blue-text-gradient",
         },
         {
@@ -256,33 +268,58 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "xml",
           color: "pink-text-gradient",
         },
+        {
+          name: "firebase",
+          color: "blue-text-gradient",
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: showtracker,
+      source_code_link: " https://github.com/arcc-hitt/ShowTracker",
     },
     {
-      name: "Trip Guide",
+      name: "Employment Of Biomedical Signals For Rehabilitation Equipments (VI Sem Project)",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "EMG-based project to enhance rehab equipment control, deploying ML models like, SVM, Random Forest for precise gesture recognition. Designed an interactive demo.",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "scikit-learn",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "gradio",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: VIsemproject,
+      source_code_link: "https://github.com/arcc-hitt/CodeClause-Internship/tree/main/ToDo-List",
+    },
+    {
+      name: "To-Do List App",
+      description:
+        "An efficient To-Do List app with category selection - Business/Personal. Add, Modify, Delete functionalities, completion tracking, and local storage support.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javacript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: todo,
+      source_code_link: "https://github.com/arcc-hitt/CodeClause-Internship/tree/main/ToDo-List",
     },
   ];
   
