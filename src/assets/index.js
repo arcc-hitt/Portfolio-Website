@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import python from "./tech/python.webp";
+import django from "./tech/django.png";
+import aws from "./tech/aws.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -51,6 +55,8 @@ export {
   github,
   menu,
   close,
+  java,
+  python,
   css,
   docker,
   figma,
@@ -64,6 +70,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  django,
+  aws,
   meta,
   shopify,
   starbucks,

@@ -3,6 +3,8 @@ import {
     backend,
     creator,
     web,
+    java,
+    python,
     javascript,
     typescript,
     html,
@@ -12,6 +14,8 @@ import {
     tailwind,
     nodejs,
     mongodb,
+    django,
+    aws,
     git,
     figma,
     docker,
@@ -81,19 +85,19 @@ import {
       icon: backend,
     },
     {
-      title: "UI/ UX Designer",
+      title: "Backend Developer",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "java",
+      icon: java,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "python",
+      icon: python,
     },
     {
       name: "JavaScript",
@@ -112,10 +116,6 @@ import {
     //   icon: redux,
     // },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
@@ -126,6 +126,26 @@ import {
     {
       name: "Three JS",
       icon: threejs,
+    },
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "django",
+      icon: django,
+    },
+    {
+      name: "aws",
+      icon: aws,
     },
     {
       name: "git",
@@ -235,7 +255,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mysql",
+          name: "aws",
           color: "green-text-gradient",
         },
         {
