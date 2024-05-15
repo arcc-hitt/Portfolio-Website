@@ -263,33 +263,6 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    slidesToScroll: 3,
-    slidesToShow: 3,
-    responsive: [
-      {        
-        breakpoint: 769,
-        settings: {
-          slidesToScroll: 3,
-          slidesToShow: 1,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 426,
-        settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
-          arrows: false,
-        },
-      },
-    ],
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
