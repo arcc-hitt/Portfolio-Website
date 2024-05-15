@@ -24,6 +24,7 @@ import java from "./tech/java.png";
 import python from "./tech/python.webp";
 import django from "./tech/django.png";
 import aws from "./tech/aws.png";
+import mui from "./tech/mui.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -72,6 +73,7 @@ export {
   threejs,
   django,
   aws,
+  mui,
   meta,
   shopify,
   starbucks,

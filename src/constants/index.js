@@ -17,6 +17,7 @@ import {
     django,
     aws,
     git,
+    mui,
     figma,
     docker,
     meta,
@@ -92,12 +93,12 @@ import {
   
   const technologies = [
     {
-      name: "java",
-      icon: java,
+      name: "HTML 5",
+      icon: html,
     },
     {
-      name: "python",
-      icon: python,
+      name: "CSS 3",
+      icon: css,
     },
     {
       name: "JavaScript",
@@ -111,10 +112,6 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    // {
-    //   name: "Redux Toolkit",
-    //   icon: redux,
-    // },
     {
       name: "Node JS",
       icon: nodejs,
@@ -128,36 +125,24 @@ import {
       icon: threejs,
     },
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
+      name: "Redux Toolkit",
+      icon: redux,
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
     {
-      name: "django",
-      icon: django,
+      name: "Material UI",
+      icon: mui,
     },
     {
-      name: "aws",
-      icon: aws,
-    },
-    {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     // {
-    //   name: "figma",
-    //   icon: figma,
-    // },
-    // {
-    //   name: "docker",
-    //   icon: docker,
+    //   name: "Java",
+    //   icon: java,
     // },
   ];
   
