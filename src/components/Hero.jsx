@@ -27,11 +27,11 @@ const Hero = () => {
       
       <ComputersCanvas/>
 
-      <div className='absolute right-0 top-0 px-16 py-10 hidden xl:block'>
+      <div className='absolute right-0 top-0 px-16 py-10 hidden xl:block select-none'>
           <Profile/>
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-2 w-full flex justify-center items-center'>
+      <div className='absolute bottom-2 w-full flex justify-center items-center z-10'>
         <a href="#about">
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
